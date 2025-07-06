@@ -10,7 +10,14 @@
 {-# LANGUAGE TypeApplications #-}
 {-# LANGUAGE TypeOperators #-}
 
-module Data.Extensible.Sum.Internal where
+module Data.Extensible.Sum.Internal
+  ( OpenSum (..)
+  , inj
+  , prj
+  , decompose
+  , weaken
+  , match
+  ) where
 
 import Data.Kind (Type)
 import Data.Proxy

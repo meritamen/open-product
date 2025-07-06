@@ -1,10 +1,5 @@
 module Data.Extensible.Sum
- ( OpenSum (..)
- , inj
- , prj
- , decompose
- , weaken
- , match
+ ( module Data.Extensible.Sum.Internal
  ) where
 
 import Data.Extensible.Sum.Internal
