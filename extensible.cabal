@@ -1,8 +1,8 @@
 cabal-version:      3.0
 name:               extensible
 version:            0.1.0.0
-synopsis:           Extensible Data
-description:        Extensible Data by using type system to encode the extra information.
+synopsis:           Extensible data types
+description:        Extensible data types by using type system to encode the extra information.
 license:            BSD-3-Clause
 license-file:       LICENSE
 author:             Mrjt Jmn
