@@ -1,6 +1,6 @@
 cabal-version:      3.0
 name:               extensible
-version:            0.1.0.0
+version:            0.2.0.0
 synopsis:           Extensible data types
 description:        Extensible data types by using type system to encode the extra information.
 license:            BSD-3-Clause
@@ -9,7 +9,7 @@ author:             Mrjt Jmn
 maintainer:         meritamen@sdf.org
 category:           Data
 build-type:         Simple
-tested-with:        GHC==9.8.2, GHC==9.6.4, GHC==9.4.8
+tested-with:        GHC==9.8.2, GHC==9.6.4
 
 common warnings
     ghc-options: -Wall
