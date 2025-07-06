@@ -30,7 +30,8 @@ library
 test-suite extensible-test
     import:           warnings
     default-language: Haskell2010
-    other-modules:    SumSpecs
+    other-modules:    ProductSpecs
+                    , SumSpecs
     type:             exitcode-stdio-1.0
     hs-source-dirs:   test
     main-is:          Main.hs
