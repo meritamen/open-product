@@ -141,12 +141,12 @@ jobs:
           find sdist -maxdepth 1 -type f -name '*.tar.gz' -exec tar -C $GITHUB_WORKSPACE/unpacked -xzvf {} \;
       - name: generate cabal.project
         run: |
-          PKGDIR_open-product="$(find "$GITHUB_WORKSPACE/unpacked" -maxdepth 1 -type d -regex '.*/open-product-[0-9.]*')"
-          echo "PKGDIR_open-product=${PKGDIR_open-product}" >> "$GITHUB_ENV"
+          PKGDIR_open_product="$(find "$GITHUB_WORKSPACE/unpacked" -maxdepth 1 -type d -regex '.*/open-product-[0-9.]*')"
+          echo "PKGDIR_open_product=${PKGDIR_open_product}" >> "$GITHUB_ENV"
           rm -f cabal.project cabal.project.local
           touch cabal.project
           touch cabal.project.local
-          echo "packages: ${PKGDIR_open-product}" >> cabal.project
+          echo "packages: ${PKGDIR_open_product}" >> cabal.project
           echo "package open-product" >> cabal.project
           echo "    ghc-options: -Werror=missing-methods" >> cabal.project
           cat >> cabal.project <<EOF
@@ -179,7 +179,7 @@ jobs:
           $CABAL v2-test $ARG_COMPILER $ARG_TESTS $ARG_BENCH all --test-show-details=direct
       - name: cabal check
         run: |
-          cd ${PKGDIR_open-product} || false
+          cd ${PKGDIR_open_product} || false
           ${CABAL} -vnormal check
       - name: haddock
         run: |

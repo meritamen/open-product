@@ -1,6 +1,6 @@
 cabal-version:      3.0
 name:               open-product
-version:            0.2.0.0
+version:            0.1.0.0
 synopsis:           Open product data types
 description:        Open product data types by using type system to encode the extra information.
 license:            BSD-3-Clause
