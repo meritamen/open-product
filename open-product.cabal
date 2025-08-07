@@ -1,8 +1,8 @@
 cabal-version:      3.0
-name:               extensible
+name:               open-product
 version:            0.2.0.0
-synopsis:           Extensible data types
-description:        Extensible data types by using type system to encode the extra information.
+synopsis:           Open product data types
+description:        Open product data types by using type system to encode the extra information.
 license:            BSD-3-Clause
 license-file:       LICENSE
 author:             Mrjt Jmn
@@ -16,27 +16,22 @@ common warnings
 
 library
     import:           warnings
-    exposed-modules:  Data.Extensible
-                    , Data.Extensible.Sum
-                    , Data.Extensible.Product
-    other-modules:    Data.Extensible.Product.Internal
-                    , Data.Extensible.Sum.Internal
+    exposed-modules:  Data.Product
     build-depends:    base >=4.17.2.0 && < 5
                     , first-class-families ^>= 0.8.1.0
                     , vector ^>=0.13.1.0
     hs-source-dirs:   src
     default-language: Haskell2010
 
-test-suite extensible-test
+test-suite Product-test
     import:           warnings
     default-language: Haskell2010
     other-modules:    ProductSpecs
-                    , SumSpecs
     type:             exitcode-stdio-1.0
     hs-source-dirs:   test
     main-is:          Main.hs
     build-depends:    base >=4.17.2.0 && < 5
-                    , extensible
+                    , open-product
                     , hspec
                     , tasty
                     , tasty-hspec

@@ -13,7 +13,7 @@
 {-# LANGUAGE TypeOperators #-}
 {-# LANGUAGE UndecidableInstances #-}
 
-module Data.Extensible.Product.Internal (
+module Data.Product (
   OpenProduct (..)
   , nil
   , Key (..)

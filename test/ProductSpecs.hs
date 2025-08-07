@@ -4,7 +4,7 @@
 
 module ProductSpecs where
 
-import Data.Extensible.Product
+import Data.Product
 import Test.Hspec
 
 productSpecs :: Spec

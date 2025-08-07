@@ -1,3 +1,3 @@
-# extensible
+# open-product
 
-Extensible data types by using type system to encode the extra information.
+Open product data types by using type system to encode the extra information.
